@@ -1,0 +1,20 @@
+{
+  "id": "activation-api",
+  "name": "Activation API",
+  "description": "Fetch activation codes from an external HTTP API via conversation or slash command.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["baseUrl", "authToken"],
+    "properties": {
+      "baseUrl": {
+        "type": "string",
+        "description": "Base URL of the API server (e.g. http://localhost:3000)"
+      },
+      "authToken": {
+        "type": "string",
+        "description": "Authorization token sent in the Authorization header"
+      }
+    }
+  }
+}

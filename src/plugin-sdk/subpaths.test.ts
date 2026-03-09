@@ -47,6 +47,7 @@ const bundledExtensionSubpathLoaders = [
   { id: "voice-call", load: () => import("openclaw/plugin-sdk/voice-call") },
   { id: "zalo", load: () => import("openclaw/plugin-sdk/zalo") },
   { id: "zalouser", load: () => import("openclaw/plugin-sdk/zalouser") },
+  { id: "activation-api", load: () => import("openclaw/plugin-sdk/activation-api") },
 ] as const;
 
 describe("plugin-sdk subpath exports", () => {

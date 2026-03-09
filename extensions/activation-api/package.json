@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw/activation-api",
+  "version": "2026.3.9",
+  "private": true,
+  "description": "OpenClaw plugin for fetching activation codes from an external HTTP API",
+  "type": "module",
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
