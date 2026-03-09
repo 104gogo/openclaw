@@ -71,4 +71,7 @@ export default function register(api: OpenClawPluginApi) {
   };
 
   api.registerTool(tool as unknown as AnyAgentTool);
+  api.logger.info(
+    "activation-api: registered get_activation_code tool and /activation-code command",
+  );
 }

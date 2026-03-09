@@ -1,5 +1,6 @@
 {
   "id": "activation-api",
+  "skills": ["./skills"],
   "name": "Activation API",
   "description": "Fetch activation codes from an external HTTP API via conversation or slash command.",
   "configSchema": {
