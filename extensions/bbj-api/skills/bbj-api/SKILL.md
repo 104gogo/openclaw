@@ -1,7 +1,9 @@
 ---
 name: bbj-api
-description: 播播机服务 API，用于创建激活码、查询数据等。
-metadata: { "openclaw": { "emoji": "📺", "requires": { "bins": ["curl"] }, "install": [] } }
+description: 播播机服务 API，用于创建激活码、查询数据等。触发条件：用户要求创建激活码、生成邀请码或提到"播播机"/"激活码"。
+command-dispatch: tool
+command-tool: bbj_create_activation_code
+metadata: { "openclaw": { "requires": { "config": ["plugins.entries.bbj-api.enabled"] } } }
 ---
 
 # 播播机服务

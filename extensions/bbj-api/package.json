@@ -1,10 +1,15 @@
 {
-  "name": "bbj-api",
-  "version": "1.0.0",
-  "description": "播播机 API 集成",
+  "name": "@openclaw/bbj-api",
+  "version": "2026.3.11",
+  "private": true,
+  "description": "OpenClaw plugin for 播播机 API integration",
   "type": "module",
-  "main": "index.js",
   "dependencies": {
-    "@sinclair/typebox": "^0.32.0"
+    "@sinclair/typebox": "0.34.48"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
   }
 }
