@@ -1,0 +1,7 @@
+{
+  "id": "bbj-api",
+  "name": "播播机 API",
+  "description": "播播机服务 API 集成",
+  "version": "1.0.0",
+  "entry": "index.js"
+}
