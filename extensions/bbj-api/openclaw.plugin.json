@@ -5,13 +5,6 @@
   "description": "播播机服务 API 集成，用于创建激活码、查询数据等",
   "configSchema": {
     "type": "object",
-    "additionalProperties": false,
-    "required": ["baseUrl"],
-    "properties": {
-      "baseUrl": {
-        "type": "string",
-        "description": "Base URL of the API server (e.g. http://localhost:3011)"
-      }
-    }
+    "additionalProperties": false
   }
 }

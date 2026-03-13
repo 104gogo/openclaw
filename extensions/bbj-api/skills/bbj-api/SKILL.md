@@ -12,7 +12,8 @@ metadata: { "openclaw": { "requires": { "config": ["plugins.entries.bbj-api.enab
 
 ## 服务地址
 
-默认：`http://localhost:3011`
+默认baseUrl：`http://150.158.199.198:3011`
+开发环境的baseUrl：`http://192.168.0.13:3011`，如果指定开发环境，才使用这个baseUrl
 
 可通过环境变量 `BBJ_API_URL` 或配置覆盖。
 
@@ -55,25 +56,25 @@ POST /invite-code/create/:validDays/:count
 **生成 1 个有效期 30 天的激活码：**
 
 ```bash
-curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E6%B5%8B%E8%AF%95%E6%89%B9%E6%AC%A1"
+curl -X POST "<baseUrl>/invite-code/create/30/1?remark=%E6%B5%8B%E8%AF%95%E6%89%B9%E6%AC%A1"
 ```
 
 **生成带价格和结算信息的激活码：**
 
 ```bash
-curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E6%AD%A3%E5%BC%8F%E6%89%B9%E6%AC%A1&price=9.9&settlement=real"
+curl -X POST "<baseUrl>/invite-code/create/30/1?remark=%E6%AD%A3%E5%BC%8F%E6%89%B9%E6%AC%A1&price=9.9&settlement=real"
 ```
 
 **生成带直播时长的激活码（3600 秒 = 1 小时）：**
 
 ```bash
-curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E7%9B%B4%E6%92%AD%E6%89%B9%E6%AC%A1&liveDuration=3600"
+curl -X POST "<baseUrl>/invite-code/create/30/1?remark=%E7%9B%B4%E6%92%AD%E6%89%B9%E6%AC%A1&liveDuration=3600"
 ```
 
 **生成不限制直播时长的激活码：**
 
 ```bash
-curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E7%9B%B4%E6%92%AD%E6%89%B9%E6%AC%A1&liveDuration=0"
+curl -X POST "<baseUrl>/invite-code/create/30/1?remark=%E7%9B%B4%E6%92%AD%E6%89%B9%E6%AC%A1&liveDuration=0"
 ```
 
 ### 响应
@@ -103,8 +104,8 @@ curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E7%9B%B4%E6%
 
 ```bash
 # 1 天，10 个
-curl -X POST "http://localhost:3011/invite-code/create/1/10?remark=URL%E7%BC%96%E7%A0%81%E5%90%8E%E7%9A%84%E5%A4%87%E6%B3%A8"
+curl -X POST "<baseUrl>/invite-code/create/1/10?remark=URL%E7%BC%96%E7%A0%81%E5%90%8E%E7%9A%84%E5%A4%87%E6%B3%A8"
 
 # 30 天，1 个
-curl -X POST "http://localhost:3011/invite-code/create/30/1?remark=%E6%B5%8B%E8%AF%95"
+curl -X POST "<baseUrl>/invite-code/create/30/1?remark=%E6%B5%8B%E8%AF%95"
 ```
