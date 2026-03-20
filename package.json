@@ -289,6 +289,10 @@
       "types": "./dist/plugin-sdk/account-helpers.d.ts",
       "default": "./dist/plugin-sdk/account-helpers.js"
     },
+    "./plugin-sdk/account-id": {
+      "types": "./dist/plugin-sdk/account-id.d.ts",
+      "default": "./dist/plugin-sdk/account-id.js"
+    },
     "./plugin-sdk/account-resolution": {
       "types": "./dist/plugin-sdk/account-resolution.d.ts",
       "default": "./dist/plugin-sdk/account-resolution.js"
@@ -508,14 +512,6 @@
     "./plugin-sdk/zalouser": {
       "types": "./dist/plugin-sdk/zalouser.d.ts",
       "default": "./dist/plugin-sdk/zalouser.js"
-    },
-    "./plugin-sdk/activation-api": {
-      "types": "./dist/plugin-sdk/activation-api.d.ts",
-      "default": "./dist/plugin-sdk/activation-api.js"
-    },
-    "./plugin-sdk/account-id": {
-      "types": "./dist/plugin-sdk/account-id.d.ts",
-      "default": "./dist/plugin-sdk/account-id.js"
     },
     "./plugin-sdk/speech": {
       "types": "./dist/plugin-sdk/speech.d.ts",
